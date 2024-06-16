@@ -1,8 +1,8 @@
 namespace AppNotesDanielaMoraMAUI.Views
 {
-    public partial class NotePageDMO : ContentPage
+    public partial class NotePage_DMO : ContentPage
     {
-        public NotePageDMO()
+        public NotePage_DMO()
         {
             InitializeComponent();
         }

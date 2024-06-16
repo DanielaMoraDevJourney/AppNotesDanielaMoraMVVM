@@ -5,7 +5,7 @@ namespace AppNotesDanielaMoraMAUI
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(Views.NotePageDMO), typeof(Views.NotePageDMO));
+            Routing.RegisterRoute(nameof(Views.NotePage_DMO), typeof(Views.NotePage_DMO));
         }
     }
 }

@@ -74,6 +74,9 @@
 	  <Compile Update="AppShell.xaml.cs">
 	    <DependentUpon>AppShell.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\NotePage_DMO.xaml.cs">
+	    <DependentUpon>NotePage_DMO.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -89,7 +92,7 @@
 	  <MauiXaml Update="Views\AllNotesPage_DMO.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\NotePageDMO.xaml">
+	  <MauiXaml Update="Views\NotePage_DMO.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
