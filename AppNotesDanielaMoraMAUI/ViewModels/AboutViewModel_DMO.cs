@@ -1,15 +1,11 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace AppNotesDanielaMoraMAUI.ViewModels
 {
-    internal class AboutViewModel_DMO
+    internal class AboutViewModel_DMO : ObservableObject
     {
         public string Title_DMO => AppInfo.Name;
         public string Version_DMO => AppInfo.VersionString;
@@ -22,7 +18,9 @@ namespace AppNotesDanielaMoraMAUI.ViewModels
             ShowMoreInfoCommand_DMO = new AsyncRelayCommand(ShowMoreInfo);
         }
 
-        async Task ShowMoreInfo() =>
+        private async Task ShowMoreInfo()
+        {
             await Launcher.Default.OpenAsync(MoreInfoUrl_DMO);
+        }
     }
 }

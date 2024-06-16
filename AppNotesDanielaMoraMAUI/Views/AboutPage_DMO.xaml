@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:models="clr-namespace:AppNotesDanielaMoraMAUI.Models"
+             xmlns:viewModels="clr-namespace:AppNotesDanielaMoraMAUI.ViewModels"
              x:Class="AppNotesDanielaMoraMAUI.Views.AboutPage_DMO"
              Title="AboutPage_DMO">
-    
     <ContentPage.BindingContext>
-        <models:About_DMO />
+        <viewModels:AboutViewModel_DMO />
     </ContentPage.BindingContext>
     <VerticalStackLayout Spacing="10" Margin="10">
         <HorizontalStackLayout Spacing="10">
@@ -18,6 +17,6 @@
         </HorizontalStackLayout>
 
         <Label Text="{Binding Message_DMO}" />
-        <Button Text="Learn more..." Clicked="LearnMore_Clicked_DMO" />
+        <Button Text="Learn more..." Command="{Binding ShowMoreInfoCommand_DMO}" />
     </VerticalStackLayout>
 </ContentPage>
