@@ -5,8 +5,6 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-
-
 namespace AppNotesDanielaMoraMAUI.Models
 {
     internal class Note_DMO
